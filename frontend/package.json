@@ -1,0 +1,27 @@
+{
+  "name": "omnirec-sdk-demo-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@omnirec/commerce-next": "file:../../omniRec/packages/commerce-next",
+    "@omnirec/commerce-node": "file:../../omniRec/packages/commerce-node",
+    "@omnirec/commerce-react": "file:../../omniRec/packages/commerce-react",
+    "@omnirec/commerce-web": "file:../../omniRec/packages/commerce-web",
+    "next": "16.4.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "typescript": "5.7.2"
+  }
+}
+
