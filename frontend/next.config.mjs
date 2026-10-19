@@ -8,6 +8,12 @@ const nextConfig = {
   turbopack: {
     root: path.resolve(process.cwd(), "../.."),
   },
+  webpack(config) {
+    // npm installs local file dependencies as junctions. Preserve their
+    // consumer-side paths so sibling OmniRec packages resolve together.
+    config.resolve.symlinks = false;
+    return config;
+  },
   async rewrites() {
     return [
       {
