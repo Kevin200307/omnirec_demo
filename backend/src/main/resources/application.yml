@@ -1,0 +1,16 @@
+server:
+  port: ${SERVER_PORT:8082}
+  error:
+    include-message: never
+    include-stacktrace: never
+
+spring:
+  application:
+    name: omnirec-demo-history-api
+
+demo:
+  omnirec:
+    event-api-url: ${OMNIREC_EVENT_API_URL:http://localhost:8081}
+    history-secret: ${OMNIREC_HISTORY_SECRET:}
+    customer-id: demo_customer_123
+
