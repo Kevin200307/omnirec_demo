@@ -32,6 +32,16 @@ export function Storefront() {
     track("search_performed", { search: { query: normalized || "all products", resultCount: products.length } });
   };
 
+  const selectCategory = (item: string) => {
+    setCategory(item);
+    track("category_viewed", {
+      category: {
+        id: item === "All" ? "all-products" : item.toLowerCase(),
+        name: item,
+      },
+    });
+  };
+
   return (
     <section className="collection section-shell" id="collection">
       <div className="section-heading">
@@ -61,7 +71,7 @@ export function Storefront() {
               key={item}
               type="button"
               className={category === item ? "is-active" : ""}
-              onClick={() => setCategory(item)}
+              onClick={() => selectCategory(item)}
             >
               {item}
             </button>
