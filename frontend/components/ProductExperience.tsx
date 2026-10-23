@@ -48,7 +48,7 @@ export function ProductExperience({ product }: { product: Product }) {
                 className={`button button--outline${wishlisted ? " is-active" : ""}`}
                 aria-pressed={wishlisted}
                 onClick={() => {
-                  if (!wishlisted) track("product_wishlisted");
+                  if (!wishlisted) track("product_wishlisted", { product: productContext });
                   setWishlisted((current) => !current);
                 }}
               >
