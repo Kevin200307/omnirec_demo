@@ -8,6 +8,7 @@ export type LiveDemoEvent = {
 };
 
 const MAX_EVENTS = 12;
+const EMPTY_SERVER_EVENTS: LiveDemoEvent[] = [];
 let events: LiveDemoEvent[] = [];
 const listeners = new Set<() => void>();
 
@@ -34,6 +35,6 @@ export function getLiveEvents() {
 }
 
 export function getServerLiveEvents(): LiveDemoEvent[] {
-  return [];
+  return EMPTY_SERVER_EVENTS;
 }
 
