@@ -9,6 +9,7 @@ export type Product = {
   detail: string;
   material: string;
   color: string;
+  image: string;
   accent: string;
   accentSoft: string;
   shape: "lamp" | "tray" | "clock" | "vase" | "stand" | "notebook";
@@ -26,6 +27,7 @@ export const PRODUCTS: Product[] = [
     detail: "Orbit turns a work surface into a calm, deliberate place. Its weighted base stays planted while the shade rotates through 120 degrees.",
     material: "Powder-coated steel",
     color: "Ink blue",
+    image: "/images/orbit-desk-lamp.png",
     accent: "#3157d5",
     accentSoft: "#dce5ff",
     shape: "lamp",
@@ -41,6 +43,7 @@ export const PRODUCTS: Product[] = [
     detail: "Fold is pressed from a single sheet of recycled aluminium and finished by hand. Four lifted corners keep daily objects in easy reach.",
     material: "Recycled aluminium",
     color: "Saffron",
+    image: "/images/fold-catchall-tray.png",
     accent: "#f2733d",
     accentSoft: "#ffe2d4",
     shape: "tray",
@@ -56,6 +59,7 @@ export const PRODUCTS: Product[] = [
     detail: "A silent sweep movement keeps the room free of ticking. The solid beech surround is finished with plant-based oil.",
     material: "Solid beech",
     color: "Natural",
+    image: "/images/minute-table-clock.png",
     accent: "#a47446",
     accentSoft: "#ead8c2",
     shape: "clock",
@@ -71,6 +75,7 @@ export const PRODUCTS: Product[] = [
     detail: "Still is wheel-thrown in a family studio. Its matte body and gloss interior make water changes simple while keeping the silhouette soft.",
     material: "Glazed stoneware",
     color: "Moss",
+    image: "/images/still-bud-vase.png",
     accent: "#637963",
     accentSoft: "#dbe5d8",
     shape: "vase",
@@ -86,6 +91,7 @@ export const PRODUCTS: Product[] = [
     detail: "Rise holds laptops up to sixteen inches and leaves room beneath for a keyboard. Cork contact points keep devices steady and unscratched.",
     material: "Bent aluminium and cork",
     color: "Chalk",
+    image: "/images/rise-laptop-stand.png",
     accent: "#7668bb",
     accentSoft: "#e6e1ff",
     shape: "stand",
@@ -101,6 +107,7 @@ export const PRODUCTS: Product[] = [
     detail: "Each book uses smooth recycled stock with a different ruling: dot grid, plain, and weekly plan. Thread binding lets every spread lie flat.",
     material: "Recycled paper",
     color: "Cobalt set",
+    image: "/images/field-notebook-set.png",
     accent: "#167a83",
     accentSoft: "#d3eef0",
     shape: "notebook",

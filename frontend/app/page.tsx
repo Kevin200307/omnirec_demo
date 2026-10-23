@@ -6,6 +6,17 @@ import { Storefront } from "@/components/Storefront";
 export default function HomePage() {
   return (
     <main>
+      <section className="shop-banner" aria-label="New workspace collection">
+        <img src="/images/hero-collection.png" alt="A warm workspace styled with the Aster and Grain collection" />
+        <div className="shop-banner__shade" />
+        <div className="shop-banner__content section-shell">
+          <span className="shop-banner__kicker">The workspace edit · New season</span>
+          <h1>Make room for<br />better work.</h1>
+          <p>Considered lighting, useful objects, and tactile stationery for calmer desks.</p>
+          <a className="button button--light" href="#collection">Shop the collection <span>→</span></a>
+        </div>
+      </section>
+
       <section className="hero section-shell">
         <div className="hero__copy">
           <span className="eyebrow">Aster &amp; Grain · OmniRec demo store</span>
